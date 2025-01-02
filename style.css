@@ -1,4 +1,71 @@
-* {
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nothing+You+Could+Do&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+#keyboard {
+    height: 900px;
+    width: 100%;
 }
 
+#syntax {
+    background-color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.597);
+    height: 53px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#social-icons {
+    height: 50px;
+    display: flex;
+ 
+}
+
+h1 {
+    text-align: center;
+    font-size: 86px;
+    color: rgb(255, 255, 255);
+    margin: 0px 20px;
+    font-family: 'playfair', 'Times New Roman', Times, serif;
+}
+
+
+.portrait {
+    height: 300px;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+article {
+    display: block;
+    font-size: 30px;
+    align-content: end ;
+    text-align:end;
+    color: rgb(255, 255, 255);
+    font-family: 'playfair', 'Times New Roman', Times, serif;
+}
+
+#languages {
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'playfair', 'Times New Roman', Times, serif;
+}
