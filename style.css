@@ -5,29 +5,32 @@
     width: 100%;
 }
 
-#syntax {
-    background-color: white;
+body {
+    background-color: rgba(133, 113, 83, 0.618);
 }
 
 .navbar ul {
     display: flex;
+    justify-content: space-around;
+    align-items: right;
     list-style: none;
-    background-color: rgba(255, 255, 255, 0.597);
-    height: 53px;
+    height: 55px;
     padding: 0px;
     margin: 0px;
 }
 
-#social-icons {
+.social-icons {
     height: 50px;
     display: flex;
- 
+    flex-direction: center;
 }
+
+
 
 h1 {
     text-align: center;
     font-size: 86px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin: 0px 20px;
     font-family: 'playfair', 'Times New Roman', Times, serif;
 }
@@ -39,33 +42,27 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 article {
-    display: block;
+    display: flex;
     font-size: 30px;
-    align-content: end ;
-    text-align:end;
-    color: rgb(255, 255, 255);
+    align-content:flex-start;
+    text-align: justify;
+    border-radius: 10px;
+    margin: 0px 20px;
+    color: rgb(0, 0, 0);
     font-family: 'playfair', 'Times New Roman', Times, serif;
 }
 
-#languages {
-    margin-top: 20px;
+.languages {
+    margin-top: 40px;
     padding: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 10px;
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-h2 {
-    display: block;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: 'playfair', 'Times New Roman', Times, serif;
 }
