@@ -1,12 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nothing+You+Could+Do&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap');
+
 
 #keyboard {
     height: 900px;
     width: 100%;
+    animation: fade-in 1.5s ease;
+}
+
+header {
+    font-size: 30px;
+    font-family: "playfair"; 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+    animation: fade-in 3.5s ease;
+    font-family: "Courgette", serif;
 }
 
 body {
     background-color: rgba(133, 113, 83, 0.618);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }
 
 .navbar ul {
@@ -17,10 +43,11 @@ body {
     height: 55px;
     padding: 0px;
     margin: 0px;
+    animation: fade-in 1.5s ease;
 }
 
 .navbar ul:hover {  
-   
+
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -31,11 +58,10 @@ body {
 }
 
 .social-icons:hover {
+
     transition: background-color 0.5s ease-in-out;
    
 }
-
-
 
 h1 {
     text-align: center;
@@ -43,38 +69,45 @@ h1 {
     color: rgb(0, 0, 0);
     margin: 0px 20px;
     font-family: 'playfair', 'Times New Roman', Times, serif;
+    animation: fade-in 1.5s ease;
 }
 
 
 .portrait {
-    height: 300px;
+    height: 370px;
     float: left;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    border-radius: 10px;
-    margin: 10px;
+    border-right: 40px;
+    margin: auto 10px;
+    animation: fade-in 1.5s ease;
 }
 
 article {
     display: flex;
     font-size: 30px;
-    align-content:flex-start;
-    text-align: justify;
-    border-radius: 10px;
-    margin: 0px 20px;
+    justify-content: flex-end;
+    text-align: left;
+    border-radius: 0px;
+    border-color: rgb(0, 0, 0);
+    box-sizing: 5px 5px;
+    margin: auto 10px;
     color: rgb(0, 0, 0);
+    background-color: rgb(80, 80, 80, 0.3);
     font-family: 'playfair', 'Times New Roman', Times, serif;
+    animation: fade-in 1.5s ease;
 }
-
+    
 .languages {
-    margin-top: 40px;
+    margin-top: auto;
     padding: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 10px;
     list-style: none;
+    animation: fade-in 1.5s ease;
 }
 
 .languages2 {
@@ -85,9 +118,16 @@ article {
     justify-content: space-between;
     height: 10px;
     list-style: none;
+    animation: fade-in 1.5s ease;
 }
+
 h2 {
     margin-top: 200px;
     text-align: center;
     font-size: 36px;
+    animation: fade-in 1.5s ease;
+}
+
+.line-break {
+    bo;
 }
