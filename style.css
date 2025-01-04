@@ -43,12 +43,8 @@ body {
     height: 55px;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 10px;
     animation: fade-in 1.5s ease;
-}
-
-.navbar ul:hover {  
-
-    transition: background-color 0.5s ease-in-out;
 }
 
 .social-icons {
@@ -58,8 +54,8 @@ body {
 }
 
 .social-icons:hover {
-
-    transition: background-color 0.5s ease-in-out;
+    height: 60px;
+    transition: background-color 1.5s ease;
    
 }
 
@@ -98,6 +94,27 @@ article {
     font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
 }
+
+.animate-skill{
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transform: transform: translateX(-300px);;
+}
+
+.animate-- infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0) ease-in-out;
+    }
+}
     
 .languages {
     margin-top: auto;
@@ -108,7 +125,9 @@ article {
     height: 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
+    animation: slide-left 5.5s infinite ease-in;
 }
+
 
 .languages2 {
     margin-top: 60px;
@@ -119,15 +138,46 @@ article {
     height: 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
+    animation: slide-left 6.5s infinite ease-in;
 }
 
 h2 {
     margin-top: 200px;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
     animation: fade-in 1.5s ease;
 }
 
 .line-break {
-    bo;
+    
+}
+
+
+.contact-sheet {
+    text-align: center;
+    margin-top: auto 50px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 50%;
+    box-shadow: 0px 0px 0px;
+    list-style: none;
+    animation: fade-in 1.5s ease;
+  
+}
+
+.contactcard {
+    display: flex;
+    text-align:left;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 150px;
+    width: 300px;
+    margin: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: fade-in 1.5s ease;
 }
