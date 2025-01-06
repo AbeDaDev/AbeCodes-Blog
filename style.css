@@ -70,6 +70,8 @@ h1 {
 
 
 .portrait {
+    border-inline-start-width: solid;
+    box-shadow: 10px 10px 10px;
     height: 370px;
     float: left;
     display: flex;
@@ -90,7 +92,6 @@ article {
     box-sizing: 5px 5px;
     margin: auto 10px;
     color: rgb(0, 0, 0);
-    background-color: rgb(80, 80, 80, 0.3);
     font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
 }
@@ -98,21 +99,20 @@ article {
 .animate-skill{
     animation-duration: 5s;
     animation-fill-mode: forwards;
-    transform: transform: translateX(-300px);;
 }
 
-.animate-- infinite {
+.animate--infinite {
     animation-iteration-count: infinite;
 }
 
 @keyframes slide-left {
     from {
         opacity: 0;
-        transform: translateX(300px);
-    }
+        transform: translateX(1400px);
+}
 
     to {
-        transform: translateX(0) ease-in-out;
+        transform: translateX(0) ease-in-out; 
     }
 }
     
@@ -125,7 +125,7 @@ article {
     height: 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
-    animation: slide-left 5.5s infinite ease-in;
+    animation: slide-left 8.5s infinite ease-in;
 }
 
 
@@ -138,7 +138,7 @@ article {
     height: 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
-    animation: slide-left 6.5s infinite ease-in;
+    animation: slide-left 9.5s infinite ease-in;
 }
 
 h2 {
@@ -154,30 +154,21 @@ h2 {
 
 
 .contact-sheet {
+    border-inline-end-width: solid;
+    background-color: rgba(133, 113, 83, 0.618);
+    border-radius: 10px;
     text-align: center;
-    margin-top: auto 50px;
+    margin-top: 50px 50px;
     display: flex;
     justify-content: center;
     height: 300px;
     width: 50%;
-    box-shadow: 0px 0px 0px;
+    box-shadow: 10px 10px 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
   
 }
 
-.contactcard {
-    display: flex;
-    text-align:left;
-    font-size: 20px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 150px;
-    width: 300px;
-    margin: 40px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    animation: fade-in 1.5s ease;
+#span {
+    text-align: center;
 }
