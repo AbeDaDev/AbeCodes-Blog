@@ -82,14 +82,16 @@ h1 {
     animation: fade-in 1.5s ease;
 }
 
-article {
+
+
+.about-me {
     display: flex;
     font-size: 30px;
     justify-content: flex-end;
     text-align: left;
-    border-radius: 0px;
+    border-radius: 10px;
     border-color: rgb(0, 0, 0);
-    box-sizing: 5px 5px;
+    box-sizing: 15px 15px;
     margin: auto 10px;
     color: rgb(0, 0, 0);
     font-family: 'playfair', 'Times New Roman', Times, serif;
@@ -157,12 +159,13 @@ h2 {
     border-inline-end-width: solid;
     background-color: rgba(133, 113, 83, 0.618);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     margin-top: 50px 50px;
     display: flex;
     justify-content: center;
     height: 300px;
     width: 50%;
+    font-size: 30px;
     box-shadow: 10px 10px 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
@@ -171,4 +174,19 @@ h2 {
 
 #span {
     text-align: center;
+}
+
+.portfolio-card{
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    animation: fade-in 1.5s ease;
+}
+
+.cards {
+    
+    margin: 50px;
 }
