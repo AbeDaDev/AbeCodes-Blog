@@ -40,6 +40,7 @@ body {
     justify-content: space-around;
     align-items: right;
     list-style: none;
+    align-items: center;
     height: 55px;
     padding: 0px;
     margin: 0px;
@@ -63,7 +64,7 @@ h1 {
     text-align: center;
     font-size: 86px;
     color: rgb(0, 0, 0);
-    margin: 0px 20px;
+    margin: 30px 20px;
     font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
 }
@@ -77,8 +78,9 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    border-right: 40px;
-    margin: auto 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: auto 50px auto 0px;
     animation: fade-in 1.5s ease;
 }
 
@@ -87,6 +89,9 @@ h1 {
 .about-me {
     display: flex;
     font-size: 30px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px;
+    padding: 30px;
     justify-content: flex-end;
     text-align: left;
     border-radius: 10px;
@@ -157,7 +162,7 @@ h2 {
 
 .contact-sheet {
     border-inline-end-width: solid;
-    background-color: rgba(133, 113, 83, 0.618);
+    border: 1px solid black;;
     border-radius: 10px;
     text-align: left;
     margin-top: 50px 50px;
@@ -178,15 +183,19 @@ h2 {
 
 .portfolio-card{
     border-radius: 10px;
+    border: 1px solid black;
     box-shadow: 10px 10px 10px;
-    margin: 10px;
+    margin: 10px auto;
     width: 300px;
     height: 300px;
     display: flex;
+  
     animation: fade-in 1.5s ease;
 }
 
 .cards {
+    display: flex;
     
-    margin: 50px;
+
+    margin: auto 50px;
 }
