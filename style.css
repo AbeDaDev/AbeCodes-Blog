@@ -103,15 +103,6 @@ h1 {
     animation: fade-in 1.5s ease;
 }
 
-.animate-skill{
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-.animate--infinite {
-    animation-iteration-count: infinite;
-}
-
 @keyframes slide-left {
     from {
         opacity: 0;
@@ -119,7 +110,19 @@ h1 {
 }
 
     to {
-        transform: translateX(0) ease-in-out; 
+        transform: translateX(0);
+        opacity: 0 ease;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(-1400px);
+}
+
+    to {
+        transform: translateX(1400);
     }
 }
     
@@ -132,7 +135,7 @@ h1 {
     height: 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
-    animation: slide-left 8.5s infinite ease-in;
+    animation: slide-left 8s ease;
 }
 
 
@@ -145,7 +148,7 @@ h1 {
     height: 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
-    animation: slide-left 9.5s infinite ease-in;
+    animation: slide-right 8s ease;
 }
 
 h2 {
