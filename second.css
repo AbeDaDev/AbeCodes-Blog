@@ -6,7 +6,7 @@
     width: 92%;
     margin: auto;
     height: 100%;
-    
+    border: 2px solid red; 
 }
 
 /* Tablet */
@@ -15,7 +15,7 @@
         width: 540px;
         margin: auto;
         height: 100%;
-
+        border: 2px solid red; 
     }
 }
 
@@ -26,14 +26,15 @@
     }
 }
 
-/* Header */
-#header {
-    display: flex;
-    justify-content: center; 
+#keyboard {
+    height: 900px;
+    width: 100%;
+    animation: fade-in 1.5s ease;
 }
 
 header {
     font-size: 30px;
+    font-family: "playfair"; 
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -42,12 +43,10 @@ header {
     font-family: "Courgette", serif;
 }
 
-/* Header */
 body {
-    background-color: rgba(110, 118, 130, 0.877);
+    background-color: rgba(133, 113, 83, 0.618);
 }
 
-/* Website Animation */
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -60,7 +59,6 @@ body {
     }
 }
 
-/* Navbar */
 .navbar ul {
     display: flex;
     justify-content: space-around;
@@ -86,31 +84,12 @@ body {
    
 }
 
-.linebreak {
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    height: 0px;
-    padding: 0px;
-    width: 100%;
-    margin: 50px auto;
-    animation: fade-in 1.5s ease;
-}
-
-/* Banner */
-#keyboard {
-    height: 900px;
-    width: 100%;
-    animation: fade-in 1.5s ease;
-}
-
-/* Main */
 h1 {
     text-align: center;
-    font-family: "playfair", serif;
-    font-size: 76px;
+    font-size: 86px;
     color: rgb(0, 0, 0);
     margin: 10px 20px;
+    font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
 }
 
@@ -119,32 +98,33 @@ h1 {
     border-inline-start-width: solid;
     box-shadow: 10px 10px 10px;
     height: 300px;
+    float: left;
     display: flex;
-    border-radius: 10px 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
     border: 1px solid black;
-    margin: 50px 50px;
+    margin: auto 50px auto 0px;
     animation: fade-in 1.5s ease;
 }
 
 .about-me {
     display: flex;
     font-size: 30px;
-    width: 80%;
-    justify-content: space-around;
     border: 1px solid black;
     box-shadow: 10px 10px 10px;
-    padding: 10px; 
+    padding: 30px;
+    justify-content: flex-end;
     text-align: left;
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
-    box-sizing: 10px 10px;
-    margin: 50px 50px;
+    box-sizing: 15px 15px;
+    margin: auto 10px 50px auto;
     color: rgb(0, 0, 0);
     font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
 }
-    
-/* Animation Languages & Animation */
+
 @keyframes slide-left {
     from {
         opacity: 0;
@@ -167,22 +147,14 @@ h1 {
         transform: translateX(1400);
     }
 }
-
-/* skills */
-h2 {
-    margin: 10px auto 50px auto;
-    text-align: center;
-    font-size: 30px;
-    animation: fade-in 1.5s ease;
-}
-
+    
 .languages {
     margin-top: 10px;
     padding: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 110px;
+    height: 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
     animation: slide-left 8s ease;
@@ -200,7 +172,27 @@ h2 {
     animation: slide-right 8s ease;
 }
 
-/* Contact */
+h2 {
+    margin: 10px auto 50px auto;
+    text-align: center;
+    font-size: 30px;
+    animation: fade-in 1.5s ease;
+}
+
+
+
+.linebreak {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    height: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: 50px auto;
+    animation: fade-in 1.5s ease;
+}
+
+
 .contact-sheet {
     border-inline-end-width: solid;
     border: 1px solid black;;
@@ -216,6 +208,10 @@ h2 {
     list-style: none;
     animation: fade-in 1.5s ease;
   
+}
+
+#span {
+    text-align: center;
 }
 
 .portfolio-card{
@@ -234,9 +230,5 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-#span {
-    text-align: center;
 }
 
