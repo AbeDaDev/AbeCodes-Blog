@@ -2,6 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap');
 
 
+.container {
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    border: 2px solid red; 
+}
+
+/* Tablet */
+@media only screen and (min-width: 576px) {
+    .container {
+        width: 540px;
+        margin: auto;
+        height: 100%;
+        border: 2px solid red; 
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
 #keyboard {
     height: 900px;
     width: 100%;
@@ -155,18 +179,9 @@ h2 {
     animation: fade-in 1.5s ease;
 }
 
-.container {
-    display: flex;
-    border: 1px solid black;
-    height: 0px;
-    padding: 0px;
-    width: 100%;
-    margin: 0px auto;
-    animation: fade-in 1.5s ease;
-    
-}
 
-.container2 {
+
+.linebreak {
     display: flex;
     justify-content: center;
     border: 1px solid black;
