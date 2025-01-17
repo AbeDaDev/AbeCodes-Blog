@@ -168,16 +168,9 @@ h1 {
     }
 }
 
-/* skills */
-h2 {
-    margin: 10px auto 50px auto;
-    text-align: center;
-    font-size: 30px;
-    animation: fade-in 1.5s ease;
-}
-
+/* Languages */
 .languages {
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -186,18 +179,6 @@ h2 {
     list-style: none;
     animation: fade-in 1.5s ease;
     animation: slide-left 8s ease;
-}
-
-.languages2 {
-    margin-top: 200px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 10px;
-    list-style: none;
-    animation: fade-in 1.5s ease;
-    animation: slide-right 8s ease;
 }
 
 /* Contact */
