@@ -99,6 +99,7 @@ body {
 
 /* Banner */
 #keyboard {
+    margin: 0px;
     animation: fade-in 1.5s ease;
 }
 
