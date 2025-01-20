@@ -6,23 +6,57 @@
     width: 92%;
     margin: auto;
     height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     
 }
 
-/* Tablet */
-@media only screen and (min-width: 576px) {
+@media (max-width: 768px) {
     .container {
-        width: 540px;
-        margin: auto;
-        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .portrait {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-sheet {
+        width: 90%;
+        font-size: 20px;
     }
 }
 
-/* Desktop */
-@media only screen and (min-width: 1200px) {
+@media (max-width: 480px) {
+    .contact-sheet {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
     .container {
-        width: 1140px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portrait {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-sheet {
+        width: 90%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-sheet {
+        width: 100%;
+        font-size: 16px;
     }
 }
 
@@ -44,6 +78,7 @@ header {
 
 /* Header */
 body {
+    margin: 0px;
     background-color: rgba(110, 118, 130, 0.877);
 }
 
@@ -93,7 +128,7 @@ body {
     height: 0px;
     padding: 0px;
     width: 100%;
-    margin: 50px auto;
+    margin: 10px auto;
     animation: fade-in 1.5s ease;
 }
 
@@ -109,10 +144,16 @@ h1 {
     font-family: "playfair", serif;
     font-size: 76px;
     color: rgb(0, 0, 0);
-    margin: 10px 20px;
+    margin: 50px 20px;
     animation: fade-in 1.5s ease;
 }
 
+.portrait-container {
+    display: flex;
+    justify-items: flex-start;
+    margin-top: 0px;
+    animation: fade-in 1.5s ease;
+}
 
 .portrait {
     border-inline-start-width: solid;
@@ -121,15 +162,16 @@ h1 {
     display: flex;
     border-radius: 10px 10px;
     border: 1px solid black;
-    margin: 50px 50px;
+    margin-right: 20px;
     animation: fade-in 1.5s ease;
 }
 
 .about-me {
     display: flex;
-    font-size: 30px;
-    width: 80%;
-    justify-content: space-around;
+    font-size: 20px;
+    height: 300px;
+    width: 600px;
+    align-self: flex-end;
     border: 1px solid black;
     box-shadow: 10px 10px 10px;
     padding: 10px; 
@@ -137,7 +179,7 @@ h1 {
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
     box-sizing: 10px 10px;
-    margin: 50px 50px;
+    margin: 0px 0px;
     color: rgb(0, 0, 0);
     font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
@@ -188,14 +230,24 @@ h1 {
     text-align: left;
     margin-top: 50px 50px;
     display: flex;
-    justify-content: center;
-    height: 400px;
-    width: 70%;
-    font-size: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+    height: 200px;
+    width: 500px;
+    font-size: 30px;
     box-shadow: 10px 10px 10px;
     list-style: none;
     animation: fade-in 1.5s ease;
   
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 50px 0px 5px;
+    animation: fade-in 1.5s ease;
 }
 
 .portfolio-card{
