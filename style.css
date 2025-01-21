@@ -215,17 +215,6 @@ h1 {
     }
 }
 
-@keyframes slide-right {
-    from {
-        opacity: 0;
-        transform: translateX(-1400px);
-}
-
-    to {
-        transform: translateX(1400);
-    }
-}
-
 /* Languages */
 .languages {
     margin-top: 50px;

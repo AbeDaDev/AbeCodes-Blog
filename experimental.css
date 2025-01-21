@@ -5,21 +5,14 @@
     border: 1px solid red;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portrait {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .contact-sheet {
-        width: 90%;
-        font-size: 20px;
-    }
+.container {
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
 }
 
 #header {
@@ -114,25 +107,5 @@ body {
 }
 
 /* Animation Languages & Animation */
-@keyframes slide-left {
-    from {
-        opacity: 0;
-        transform: translateX(1400px);
-}
 
-    to {
-        transform: translateX(0);
-        opacity: 0 ease;
-    }
-}
 
-@keyframes slide-right {
-    from {
-        opacity: 0;
-        transform: translateX(-1400px);
-}
-
-    to {
-        transform: translateX(1400);
-    }
-}
