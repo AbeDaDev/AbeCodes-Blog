@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nothing+You+Could+Do&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap');
 
+* {
+    margin: 0;
+}
 
 .container {
     width: 92%;
@@ -144,7 +147,14 @@ h1 {
     font-family: "playfair", serif;
     font-size: 76px;
     color: rgb(0, 0, 0);
-    margin: 50px 20px;
+    margin: 20px 20px;
+    animation: fade-in 1.5s ease;
+}
+
+#h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
     animation: fade-in 1.5s ease;
 }
 
@@ -222,6 +232,12 @@ h1 {
     animation: slide-left 8s ease;
 }
 
+#languages {
+    display: flex;
+    margin: 15px;
+    padding: 0px;
+
+}
 /* Contact */
 .contact-sheet {
     border-inline-end-width: solid;
