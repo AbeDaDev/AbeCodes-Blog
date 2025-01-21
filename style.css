@@ -3,6 +3,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -82,7 +84,7 @@ header {
 /* Header */
 body {
     margin: 0px;
-    background-color: rgba(110, 118, 130, 0.877);
+    background-color: rgba(94, 97, 101, 0.877);
 }
 
 /* Website Animation */
@@ -160,7 +162,7 @@ h1 {
 
 .portrait-container {
     display: flex;
-    justify-items: flex-start;
+    justify-items: space-between;
     margin-top: 0px;
     animation: fade-in 1.5s ease;
 }
@@ -172,7 +174,6 @@ h1 {
     display: flex;
     border-radius: 10px 10px;
     border: 1px solid black;
-    margin-right: 20px;
     animation: fade-in 1.5s ease;
 }
 
@@ -190,9 +191,15 @@ h1 {
     border-color: rgb(0, 0, 0);
     box-sizing: 10px 10px;
     margin: 0px 0px;
-    color: rgb(0, 0, 0);
+    color: rgb(8, 8, 8);
+    background-color: rgba(100, 99, 99, 0.5);
     font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
+}
+
+#about-me {
+    margin: 20px;
+    padding: 0px;
 }
     
 /* Animation Languages & Animation */
