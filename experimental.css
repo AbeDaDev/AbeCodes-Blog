@@ -5,6 +5,39 @@
     border: 1px solid red;
 }
 
+@media screen and (device-aspect-ratio: 16/9) {
+    .container {
+        width: 92%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (device-aspect-ratio: 1336/768) {
+    .container {
+        width: 92%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .container {
+        width: 92%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
 .container {
     width: 92%;
     margin: auto;
@@ -34,7 +67,12 @@ header {
 body {
     margin: 0px;
     width: 100%;
-    background-color: rgba(94, 97, 101, 0.877);
+    background:
+    linear-gradient(
+        to right,
+        rgba(255, 54, 54, 0.5),
+        rgba(1, 105, 18, 0.877)
+    );
 }
 
 /* Website Animation */
