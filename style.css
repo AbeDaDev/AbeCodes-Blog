@@ -149,6 +149,7 @@ body {
 /* Banner */
 #keyboard {
     margin: 0px;
+    height: 400px;
     animation: fade-in 1.5s ease;
 }
 
@@ -239,8 +240,9 @@ h1 {
 
 #languages {
     display: flex;
-    margin: 15px;
+    margin: 5px;
     padding: 0px;
+    width: 92%;
 
 }
 /* Contact */
