@@ -58,7 +58,14 @@
         font-size: 18px;
         width: 90%;
         align-items: center;
-        font-size: 15px;
+    }
+
+    .about-me {
+        margin: 0px;
+        padding: 10px 10px;
+        font-size: 18px;
+        width: 90%;
+        align-items: center;
     }
 
     .contact-container {
@@ -75,7 +82,6 @@
         flex-direction: column;
         align-items: center;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -89,6 +95,8 @@
 #header {
     display: flex;
     justify-content: center; 
+    color: white;
+    text-shadow: 5px 5px 5px black;
 }
 
 header {
@@ -178,7 +186,8 @@ h1 {
     text-align: center;
     font-family: "playfair", serif;
     font-size: 76px;
-    color: rgb(0, 0, 0);
+    color: white;
+    text-shadow: 5px 5px 5px black;
     margin: 20px 20px;
     animation: fade-in 1.5s ease;
 }
@@ -186,7 +195,45 @@ h1 {
 #h1 {
     text-transform: uppercase;
     display: flex;
+    font-size: 30px;
     justify-content: center;
+    animation: fade-in 1.5s ease;
+}
+
+h2 {
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+h3 {
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+#identification {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 50px 50px;
+    width: 92%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    animation: fade-in 1.5s ease;
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0, 55, 81, 0.5),
+        rgba(0, 94, 153, 0.877),
+        rgba(0, 37, 55, 0.5)
+    );
+}
+
+.intro-details {
+    padding: 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'playfair', 'Times New Roman', Times, serif;
     animation: fade-in 1.5s ease;
 }
 
@@ -199,38 +246,56 @@ h1 {
 
 .portrait {
     border-inline-start-width: solid;
+    margin: 30px 40px;
+    box-shadow: 10px 10px 10px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    animation: fade-in 1.5s ease;
+}
+
+.portrait2 {
+    border-inline-start-width: solid;
     margin: 0px 10px 0px;
     box-shadow: 10px 10px 10px;
     height: 300px;
     display: flex;
     border-radius: 10px 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     animation: fade-in 1.5s ease;
 }
 
 .about-me {
     display: flex;
     font-size: 20px;
-    height: 300px;
-    width: 600px;
-    align-self: flex-end;
-    border: 1px solid black;
-    box-shadow: 10px 10px 10px;
-    padding: 10px; 
+    height: 200px;
+    width: 92%;
+    justify-content: flex-start;
+    margin: 10px 10px;
+    padding: 10px 20px; 
     text-align: left;
-    border-radius: 10px;
-    border-color: rgb(0, 0, 0);
-    box-sizing: 10px 10px;
-    margin: 0px 0px;
-    color: rgb(8, 8, 8);
-    background-color: rgba(119, 116, 116, 0.5);
     font-family: 'playfair', 'Times New Roman', Times, serif;
-    animation: fade-in 1.5s ease;
+
 }
 
 #about-me {
-    margin: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    height: 250px;
+    border: 1px solid rgb(252, 252, 252);
+    margin: 50px 50px;
     padding: 0px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    animation: fade-in 1.5s ease;
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0, 55, 81, 0.5),
+        rgba(0, 94, 153, 0.877),
+        rgba(0, 37, 55, 0.5)
+    );
 }
     
 /* Animation Languages & Animation */
@@ -268,29 +333,28 @@ h1 {
 }
 /* Contact */
 .contact-sheet {
-    border: 1px solid black;
     padding: 10px 10px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+#contact-container {
+    border: 1px solid rgb(248, 248, 248);
     border-radius: 10px;
-    text-align: left;
-    margin-top: 30px;
-    margin-left: 30px;
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 200px;
-    width: 500px;
+    justify-content: space-around;
+    margin: 0px 0px 0px 20px;
+    animation: fade-in 1.5s ease;
     font-size: 30px;
     box-shadow: 10px 10px 10px;
     list-style: none;
-    animation: fade-in 1.5s ease;
-  
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 50px 0px 5px;
-    animation: fade-in 1.5s ease;
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0, 55, 81, 0.5),
+        rgba(0, 94, 153, 0.877),
+        rgba(0, 37, 55, 0.5)
+    );
 }
 
 .portfolio-card{
@@ -302,6 +366,13 @@ h1 {
     height: 150px;
     margin: 10px;
     display: flex;
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0, 55, 81, 0.5),
+        rgba(0, 94, 153, 0.877),
+        rgba(0, 37, 55, 0.5)
+    );
     animation: fade-in 1.5s ease;
 }
 
