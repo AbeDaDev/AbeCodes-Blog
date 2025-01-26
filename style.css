@@ -63,7 +63,7 @@
     }
 
     #about-me {
-        margin: 0px;
+        margin: 0px aut0;
         padding: 10px 10px;
         font-size: 18px;
         width: 90%;
@@ -109,11 +109,11 @@
     }
 
     #identification {
-        
+        margin: 0px auto;
     }
 
     .intro-details {
-
+        margin: 0px auto;
     }
 
 
@@ -259,6 +259,17 @@ h3 {
     );
 }
 
+#developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'playfair', 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    animation: fade-in 1.5s ease;
+}
+
 .intro-details {
     margin: 20px;
     padding: 0px 0px;
@@ -399,17 +410,17 @@ h3 {
     );
 }
 
-.downloads {
-    margin: 5px 5px;
-    height: 15px;
-    width: 15px;
-}
-
 .email {
     font-weight: bold;
     color: rgb(16, 115, 182);
     text-decoration: none;
     animation: fade-in 1.5s ease;
+}
+
+#downloads {
+    margin: 5px 5px;
+    height: 15px;
+    width: 15px;
 }
 
 .btn {
