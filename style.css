@@ -470,7 +470,7 @@ h3 {
     box-shadow: 10px 10px 10px;
     margin: 10px 10px;
     width: 300px;
-    height: 150px;
+    height: 250px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -484,6 +484,11 @@ h3 {
     animation: fade-in 1.5s ease;
 }
 
+.portfolio-card:hover {
+    background: black;
+    background-size: cover;
+}
+
 #portfolio {
     width: 92%;
     margin: auto;
@@ -492,37 +497,7 @@ h3 {
     align-items: center;
 }
 
-#portfolio1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    margin: 10px
-
-}
-
-#portfolio2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    margin: 10px
-
-}
-
-#portfolio3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    margin: 10px
-
-}
-
-#portfolio4 {
+#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -537,5 +512,20 @@ h3 {
     display: flex;
     justify-content: center;
     width: 50px;
-    margin: 5px auto
+    margin: 5px auto;
+}
+
+.project-btn:hover {
+    color: white;
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0, 55, 81, 0.5),
+        rgba(0, 94, 153, 0.877),
+        rgba(0, 37, 55, 0.5)
+    );
+}
+
+a {
+    text-decoration: none;
 }
