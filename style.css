@@ -529,3 +529,12 @@ h3 {
 a {
     text-decoration: none;
 }
+
+.email {
+    color: rgb(24, 131, 202);
+    text-decoration: none;
+}
+
+.phone {
+    color: white;
+} 
