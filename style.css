@@ -303,6 +303,11 @@ h3 {
     animation: fade-in 1.5s ease;
 }
 
+.portrait:hover {
+    background: black;
+    background-size: cover;
+}
+
 .portrait2 {
     border-inline-start-width: solid;
     margin-top: 50px;
@@ -535,6 +540,7 @@ a {
     text-decoration: none;
 }
 
-.phone {
-    color: white;
-} 
+a[href^="tel"] {
+    color: rgb(24, 131, 202) !important;
+    text-decoration: none;
+}
