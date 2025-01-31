@@ -304,8 +304,9 @@ h3 {
 }
 
 .portrait:hover {
-    background: black;
-    background-size: cover;
+    height: 400px;
+    transition: height 1.5s ease-in-out;
+    
 }
 
 .portrait2 {
@@ -317,6 +318,11 @@ h3 {
     border-radius: 10px 10px;
     border: 1px solid rgb(255, 255, 255);
     animation: fade-in 1.5s ease;
+}
+
+.portrait2:hover {
+    height: 400px;
+    transition: height 1.5s ease-in-out;
 }
 
 .about-me {
