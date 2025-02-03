@@ -504,11 +504,12 @@ h3 {
     width: 92%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
 }
 
-#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6 {
+#project{
     display: flex;
     flex-direction: column;
     align-items: center;
