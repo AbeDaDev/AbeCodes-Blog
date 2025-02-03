@@ -96,6 +96,15 @@
         align-items: left;
     }
 
+    #portfolio {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        align-content: center;
+    }
+
     .btn {
         align-self: center;
     }
