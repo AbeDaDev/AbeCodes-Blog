@@ -6,3 +6,4 @@ The Website has been deployed successfully.
 4. May want to size down the Languages icons
 5. Replace C++ with Scrimba
 6. Change profile picture
+7. Updating my resume so my website is ready to go
