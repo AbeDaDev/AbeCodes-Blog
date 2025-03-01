@@ -195,7 +195,7 @@ body {
 }
 
 .social-icons {
-    height: 50px;
+    height: 40px;
     display: flex;
     flex-direction: center;
 }
@@ -213,7 +213,7 @@ body {
     height: 0px;
     padding: 0px;
     width: 100%;
-    margin: 10px auto;
+    margin: 10px auto 0px;
     animation: fade-in 1.5s ease;
 }
 
@@ -274,6 +274,10 @@ h3 {
         rgba(0, 94, 153, 0.877),
         rgba(0, 37, 55, 0.5)
     );
+}
+#identification:hover {
+    background: black;
+    background-size: cover;
 }
 
 #developer {
@@ -388,20 +392,21 @@ h3 {
 
 /* Languages */
 .languages {
-    margin-top: 50px;
+    margin: 0px;
     padding: 0px;
     display: flex;
+    align-content: center;
     flex-direction: row;
-    justify-content: space-between;
-    height: 110px;
+    justify-content: space-evenly;
+    height: 40px;
     list-style: none;
-    animation: fade-in 1.5s ease;
-    animation: slide-left 8s ease;
+    animation: fade-in 1.0s ease;
+    animation: slide-left 5s ease;
 }
 
 #languages {
     display: flex;
-    margin: 5px;
+    margin: 10px;
     padding: 0px;
     width: 92%;
 
