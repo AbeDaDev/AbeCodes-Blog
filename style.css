@@ -46,6 +46,10 @@
     }
 }
 
+h2 {
+    text-align: center;
+}
+
 #background-banner {
     margin: 0px;
     height: 200px;
