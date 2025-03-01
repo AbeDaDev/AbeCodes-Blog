@@ -392,12 +392,12 @@ h3 {
 
 /* Languages */
 .languages {
-    margin: 0px;
+    margin: auto;
     padding: 0px;
     display: flex;
     align-content: center;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 40px;
     list-style: none;
     animation: fade-in 1.0s ease;
@@ -406,7 +406,7 @@ h3 {
 
 #languages {
     display: flex;
-    margin: 10px;
+    margin: 3px;
     padding: 0px;
     width: 92%;
 
@@ -441,6 +441,11 @@ h3 {
         rgba(0, 94, 153, 0.877),
         rgba(0, 37, 55, 0.5)
     );
+}
+
+#contact-container:hover {
+    background: black;
+    background-size: cover;
 }
 
 .email {
