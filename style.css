@@ -33,11 +33,23 @@
     }
 }
 
+#background-banner {
+    margin: 0px;
+    height: 200px;
+    animation: fade-in 1.5s ease;
+}
+
 @media (max-width: 480px) {
     .contact-sheet {
         width: 100%;
         font-size: 16px;
     }
+}
+
+#background-banner {
+    margin: 0px;
+    height: 200px;
+    animation: fade-in 1.5s ease;
 }
 
 #portfolio {
@@ -52,6 +64,12 @@
         flex-direction: column;
         align-items: center;
 
+    }
+
+    #background-banner {
+        margin: 0px;
+        height: 200px;
+        animation: fade-in 1.5s ease;
     }
     
     .portrait1 {
