@@ -159,18 +159,18 @@ h2 {
 /* Header */
 #header {
     display: flex;
-    justify-content: center; 
+    justify-content: left; 
     color: white;
     text-shadow: 5px 5px 5px black;
 }
 
 header {
+    background: rgb(21, 21, 21);
     font-size: 30px;
     display: flex;
     justify-content: center;
-    padding: 20px;
-    margin-top: 10px;
-    animation: fade-in 3.5s ease;
+    padding: 10px;
+    margin: 0px;
     font-family: "Courgette", serif;
 }
 /* Header */
@@ -202,6 +202,7 @@ body {
 }
 
 /* Navbar */
+
 .navbar ul {
     display: flex;
     justify-content: space-around;
@@ -219,6 +220,9 @@ body {
     height: 40px;
     display: flex;
     flex-direction: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0px 30px;
 }
 
 .social-icons:hover {
@@ -240,8 +244,10 @@ body {
 
 /* Banner */
 #background-banner {
+    object-fit:cover;
+    max-width: 100%;
+    height:auto;
     margin: 0px;
-    height: 400px;
     animation: fade-in 1.5s ease;
 }
 
@@ -258,6 +264,7 @@ h1 {
 }
 
 #h1 {
+    
     text-transform: uppercase;
     font-style: italic;
     display: flex;
@@ -521,106 +528,6 @@ h3 {
 
 #span {
     text-align: center;
-}
-
-.main-portfolio-card{
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid rgb(251, 250, 250);
-    box-shadow: 10px 10px 10px;
-    margin: 10px 10px;
-    width: 500px;
-    height: 250px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    background:
-    linear-gradient(
-        to bottom,
-        rgba(0, 55, 81, 0.5),
-        rgba(0, 94, 153, 0.877),
-        rgba(0, 37, 55, 0.5)
-    );
-    animation: fade-in 1.5s ease;
-}
-
-.main-portfolio-card:hover {
-    background: black;
-    background-size: cover;
-}
-
-#main-projects {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    margin: 10px
-
-}
-
-.portfolio-card{
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid rgb(251, 250, 250);
-    box-shadow: 10px 10px 10px;
-    margin: 10px 10px;
-    width: 300px;
-    height: 250px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    background:
-    linear-gradient(
-        to bottom,
-        rgba(0, 55, 81, 0.5),
-        rgba(0, 94, 153, 0.877),
-        rgba(0, 37, 55, 0.5)
-    );
-    animation: fade-in 1.5s ease;
-}
-
-.portfolio-card:hover {
-    background: black;
-    background-size: cover;
-}
-
-#portfolio {
-    width: 92%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-}
-
-#project{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    margin: 10px
-
-}
-
-.project-btn {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    width: 50px;
-    margin: 5px auto;
-}
-
-.project-btn:hover {
-    color: white;
-    background:
-    linear-gradient(
-        to bottom,
-        rgba(0, 55, 81, 0.5),
-        rgba(0, 94, 153, 0.877),
-        rgba(0, 37, 55, 0.5)
-    );
 }
 
 a {
