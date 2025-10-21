@@ -80,6 +80,42 @@
     gap: 8px;
   }
 
+  .navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;   
+  list-style: none;
+  gap: 15px;               
+  overflow-x: auto;      
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar ul::-webkit-scrollbar {
+  display: none;          
+}
+
+.social-icons {
+  height: 40px;
+  margin: 0 10px;          
+  flex-shrink: 0;           
+  transition: transform 0.3s ease;
+}
+
+.social-icons:hover {
+  transform: scale(1.3);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 header {
   display: flex;
   flex-direction: column;
