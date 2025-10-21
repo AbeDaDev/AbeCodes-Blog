@@ -17,6 +17,13 @@
 }
 
 @media (max-width: 768px) {
+    header {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -34,8 +41,8 @@
 }
 
 #background-banner {
-    margin: 0px;
-    height: 200px;
+    margin: auto;
+    width: 100%;
     animation: fade-in 1.5s ease;
 }
 
@@ -48,6 +55,19 @@
 
 h2 {
     text-align: center;
+}
+
+h4 {
+    color: red;
+}
+
+p {
+    display: flex;
+    margin: auto;
+    padding: 5px;;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
 }
 
 #background-banner {
@@ -108,8 +128,9 @@ h2 {
 
     .contact-container {
         display: flex;
+        flex-wrap: wrap;
         padding: 10px;
-        margin: 0px 0px;
+        margin: auto;
         width: 90%;
         flex-direction: column;
         align-items: center;
@@ -153,7 +174,44 @@ h2 {
         margin: 0px auto;
     }
 
+}
 
+@media (max-width: 768px) {
+  #contact-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .contact-sheet {
+    width: 100%;
+    max-width: 400px; 
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-sheet li,
+  .contact-sheet p,
+  .contact-sheet a {
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .btn {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-sheet {
+    width: 95%;
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 
 /* Header */
