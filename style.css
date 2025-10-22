@@ -53,6 +53,10 @@ html, body {
         width: 100%;
     }
 
+    .navbar ul li img {
+        width: 25px; /* tiny icons on small phones */
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -66,6 +70,10 @@ html, body {
 
     .navbar ul {
         gap: 10px;
+    }
+
+    .navbar ul li img {
+        width: 30px; /* smaller icons on tablets/mobile */
     }
 
     .social-icons {
@@ -253,7 +261,7 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 15px;
     height: auto;
     padding: 0;
@@ -262,6 +270,12 @@ body {
     flex-shrink: 1;
     max-width: 100%;   
     overflow-x: auto;     
+}
+
+.navbar ul li img {
+    width: 40px;       /* default icon size */
+    height: auto;
+    transition: all 0.2s ease; /* smooth shrinking */
 }
 
 .social-icons {
