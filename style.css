@@ -9,7 +9,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    position: inherit;
     white-space: nowrap; 
 }
 
@@ -53,8 +53,15 @@ html, body {
         width: 100%;
     }
 
-    .navbar ul li img {
-        width: 25px; /* tiny icons on small phones */
+    .navbar ul {
+        flex-wrap: wrap; /* allow wrapping if too many items */
+        gap: 8px;        /* smaller spacing to fit more */
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        flex: 1 1 auto;  /* let items shrink or grow */
+        min-width: 40px; /* prevents items from getting too tiny */
     }
 
 }
@@ -70,10 +77,6 @@ html, body {
 
     .navbar ul {
         gap: 10px;
-    }
-
-    .navbar ul li img {
-        width: 30px; /* smaller icons on tablets/mobile */
     }
 
     .social-icons {
@@ -221,8 +224,9 @@ header {
 }
 
 header, .navbar, .container {
-  max-width: 100%;
-  overflow-x: hidden;
+    max-width: 100%;
+    margin: auto;
+
 }
 
 
@@ -268,20 +272,12 @@ body {
     margin: 10px auto;
     animation: fade-in 1.5s ease;
     flex-shrink: 1;
-    max-width: 100%;   
-    overflow-x: auto;     
-}
-
-.navbar ul li img {
-    width: 40px;       /* default icon size */
-    height: auto;
-    transition: all 0.2s ease; /* smooth shrinking */
+    max-width: 100%;       
 }
 
 .social-icons {
     height: 40px;
     display: flex;
-    overflow-x: auto;
     gap: 10px;
     flex-direction: center;
     justify-content: center;
