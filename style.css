@@ -16,30 +16,6 @@
     
 }
 
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portrait {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .contact-sheet {
-        width: 90%;
-        font-size: 20px;
-    }
-}
-
 #background-banner {
     margin: auto;
     width: 100%;
@@ -51,68 +27,47 @@
         width: 100%;
         font-size: 16px;
     }
+
+    #identification {
+        margin: 0px auto;
+    }
+
+    .intro-details {
+        margin: 0px auto;
+    }
+
 }
 
 @media (max-width: 768px) {
-  header {
-    font-size: 24px;
-  }
+    header {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
 
-  .navbar ul {
-    gap: 10px;
-  }
+    .navbar ul {
+        gap: 10px;
+    }
 
-  .social-icons {
-    height: 35px;
-  }
-}
+    .social-icons {
+        height: 35px;
+    }
 
-h2 {
-    text-align: center;
-}
-
-h4 {
-    color: red;
-}
-
-p {
-    display: flex;
-    margin: auto;
-    padding: 5px;;
-    flex-wrap: wrap;
-    text-align: left;
-    justify-content: center;
-}
-
-#background-banner {
-    margin: 0px;
-    height: 200px;
-    animation: fade-in 1.5s ease;
-}
-
-#portfolio {
-    margin: auto;
-    justify-content: center; 
-    align-items: center;
-    align-content: center;
-}
-
-@media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
-
     }
 
-    #background-banner {
-        margin: 0px;
-        height: 200px;
-        animation: fade-in 1.5s ease;
-    }
-    
-    .portrait1 {
+    .portrait {
         margin-right: 30px;
         margin-bottom: 20px;
+    }
+
+    .contact-sheet {
+        width: 90%;
+        font-size: 20px;
     }
 
     #contact-id {
@@ -158,6 +113,11 @@ p {
         align-content: center;
         flex-direction: column;
         align-items: left;
+        width: 100%;
+        max-width: 400px; 
+        font-size: 18px;
+        align-items: center;
+        text-align: center;
     }
 
     #portfolio {
@@ -171,61 +131,49 @@ p {
 
     .btn {
         align-self: center;
+        margin: 10px auto;
     }
+
+    #contact-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .contact-sheet li,
+    .contact-sheet p,
+    .contact-sheet a {
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+    }
+
 }
 
-@media (max-width: 480px) {
-    .contact-sheet {
-        width: 100%;
-        font-size: 16px;
-    }
 
-    #identification {
-        margin: 0px auto;
-    }
-
-    .intro-details {
-        margin: 0px auto;
-    }
-
+h2 {
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-  #contact-container {
-    flex-direction: column;
-    align-items: center;
+h4 {
+    color: red;
+}
+
+p {
+    display: flex;
+    margin: auto;
+    padding: 5px;;
+    flex-wrap: wrap;
+    text-align: left;
     justify-content: center;
-    margin: 20px auto;
-    width: 90%;
-  }
-
-  .contact-sheet {
-    width: 100%;
-    max-width: 400px; 
-    font-size: 18px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contact-sheet li,
-  .contact-sheet p,
-  .contact-sheet a {
-    text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: anywhere;
-  }
-
-  .btn {
-    margin: 10px auto;
-  }
 }
 
-@media (max-width: 480px) {
-  .contact-sheet {
-    width: 95%;
-    font-size: 16px;
-    padding: 10px;
-  }
+#background-banner {
+    margin: 0px;
+    height: 200px;
+    animation: fade-in 1.5s ease;
 }
 
 /* Header */
