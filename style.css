@@ -3,7 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .container {
@@ -34,6 +41,16 @@
 
     .intro-details {
         margin: 0px auto;
+    }
+
+    header {
+        display: flex;
+        justify-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 10px;
+        justify-content: center;
+        width: 100%;
     }
 
 }
@@ -191,8 +208,16 @@ header {
     justify-content: center;
     padding: 10px;
     margin: 0px;
+    width: 100%;
     font-family: "Courgette", serif;
 }
+
+header, .navbar, .container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
 /* Header */
 body {
     margin: 0px;
@@ -228,13 +253,15 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    flex-wrap: nowrap;  
-    gap: 15px;             
+    flex-wrap: nowrap;
+    gap: 15px;
     height: auto;
     padding: 0;
     margin: 10px auto;
     animation: fade-in 1.5s ease;
-    flex-shrink: 1;   
+    flex-shrink: 1;
+    max-width: 100%;   
+    overflow-x: auto;     
 }
 
 .social-icons {
