@@ -10,7 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
     position: inherit;
-    white-space: nowrap; 
+    white-space: wrap; 
 }
 
 .container {
@@ -54,14 +54,15 @@ html, body {
     }
 
     .navbar ul {
-        flex-wrap: wrap; /* allow wrapping if too many items */
-        gap: 8px;        /* smaller spacing to fit more */
+        flex-wrap: wrap; 
+        gap: 8px;     
         justify-content: center;
+        margin: auto;
     }
 
     .navbar ul li {
-        flex: 1 1 auto;  /* let items shrink or grow */
-        min-width: 40px; /* prevents items from getting too tiny */
+        flex: 1 1 auto;  
+        min-width: 40px; 
     }
 
 }
