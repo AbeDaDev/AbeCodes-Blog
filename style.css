@@ -7,10 +7,10 @@
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    white-space: nowrap; 
 }
 
 .container {
@@ -253,7 +253,7 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 15px;
     height: auto;
     padding: 0;
