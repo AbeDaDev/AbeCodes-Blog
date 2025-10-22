@@ -53,7 +53,7 @@ html, body {
         width: 100%;
     }
 
-    .navbar ul {
+    .navbar ul #background-banner {
         flex-wrap: wrap; 
         gap: 8px;     
         justify-content: center;
